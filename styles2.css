@@ -24,7 +24,7 @@ body {
 h1,
 h2,
 h3 {
-    color: #2c3e50;
+    color: #1B4965;
     text-align: center;
 }
 
@@ -83,7 +83,7 @@ header nav a:hover {
 
 .project-overview h1 {
     font-size: 2.5rem;
-    color: #2980b9;
+    color: #1B4965;
     margin-bottom: 20px;
 }
 
@@ -175,7 +175,7 @@ header nav a:hover {
 
 .text-section h2 {
     font-size: 2rem;
-    color: #3498db;
+    color: #1B4965;
     margin-top: 30px;
 }
 
