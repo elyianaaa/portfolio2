@@ -226,6 +226,12 @@ nav ul li a:hover {
     margin-top: 15px;
 }
 
+.logo {
+    height: 100px;
+    display: block;
+    margin-left: auto; /* Align image to the right */
+}
+
 /* Contact Section */
 #contact {
     background-color: #d8dcdf; 
@@ -250,7 +256,7 @@ nav ul li a:hover {
 }
 
 #contact a:hover {
-    color: #1B4965; 
+    color: #cddede; 
 }
 
 /* Footer */
