@@ -1,0 +1,194 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 60px;
+}
+
+h1,
+h2,
+h3 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+header nav {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #8d9ea9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #3498db;
+}
+
+/* Project Overview */
+.project-overview {
+    padding: 80px 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.project-overview h1 {
+    font-size: 2.5rem;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.project-overview p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Flex Container for Image and Text */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+/* Image Section */
+.image-section {
+    flex: 1 1 45%;
+    /* Image will take up 45% of the space */
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.image-sections {
+    flex: 1 1 45%;
+    /* Image will take up 45% of the space */
+    margin-bottom: 30px;
+}
+
+.image-section:hover{
+    color: #424242; 
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
+
+}
+
+.image-sections:hover{
+    color: #424242; 
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(2.5);
+  -ms-transform: scale(2.5); /* IE 9 */
+  -webkit-transform: scale(2.5); /* Safari and Chrome */
+
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Section */
+.text-section {
+    flex: 1 1 50%;
+    /* Text will take up 50% of the space */
+    max-width: 700px;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+    /* Adds some space between the image and text */
+}
+
+.text-section ul {
+    list-style: disc;
+    margin-left: 40px;
+}
+
+.text-section ul li {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    color: #3498db;
+    margin-top: 30px;
+}
+
+.text-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #d8dcdf;
+    color: #CAE9FF; 
+    padding: 20px 0;
+    font-size: 0.8rem;
+    text-align: center;
+}

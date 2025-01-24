@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurul Elyiana - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">My Works</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="text-section">   
+                <h1 class="h1">Nurul Elyiana</h1>
+                <p style="text-align: right;">
+                    <span style="background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px 10px; border-radius: 5px;">
+                        Aspiring Software Developer
+                    </span>
+                </p>
+                <p style="text-align: right;">Republic Polytechnic's Diploma of Digital Design and Development.</p>
+                <p style="text-align: right; font-weight: bold; margin-top: 50px;">Scroll down to explore my work and skills!</p>
+            </div>
+            <div class="image-section">
+                <img src="images/bgImage.jpg" alt="Graphic Design Project Image" class="project-image"> 
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I enjoy turning question prompts into a seamless website for users to experience. I also love how technology allows us to showcase
+            our designs using coding languages. Most of the time I'm on my laptop to design, prototype or to code! When I'm not doing any of the above,
+            I'm usually listening to new music or traveling!
+        </p>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>I have a wide variety of skills, from design to development.</p>
+            <ul>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React.js, Node.js</li>
+                <li><strong>Backend Development:</strong> Python, Express.js</li>
+                <li><strong>Database Management:</strong> MySQL, MongoDB</li>
+                <li><strong>Version Control:</strong> Git, GitHub</li>
+                <li><strong>Design:</strong> Adobe Photoshop, Adobe Illustrator, Adobe After Effects</li>
+            </ul>
+            <p>I'm well rounded in both design and development aspect of technology and I'm always open to learning more as the world advances!</p>
+        </section>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('design')">Design</button>
+            <button onclick="filterProjects('development')">Development</button>
+        </div>
+
+        <!-- Project Container -->
+        <div class="project-container">
+            <div class="project-item" data-category="design">
+                <a href="work1.html" style="text-decoration: none;">
+                    <h3>Project 1: Graphic Design</h3>
+                    <img src="images/iloveutilthedaythatidie.png" alt="Design 1" class="project-image">
+                    <p>A poster design made using Adobe tools, based on a song.</p>
+                </a>
+            </div>
+
+            <div class="project-item" data-category="design">
+                <a href="work2.html" style="text-decoration: none;">
+                    <h3>Project 2: Concert Diary Website</h3>
+                    <img src="images/metamodernity.png" alt="Screenshot of Concert Diary Website" class="project-image">
+                    <p>A poster design made using Adobe tools, based on a song.</p>
+                </a>
+            </div>
+
+            <div class="project-item" data-category="design">
+                <a href="work3.html" style="text-decoration: none;">
+                    <h3>Project 3: Graphic Design</h3>
+                    <img src="images/wk club.png" alt="Design 2" class="project-image">
+                    <p>A poster design made using Adobe tools, based on a new album.</p>
+                </a>
+            </div>
+
+            <div class="project-item" data-category="design">
+                <a href="work4.html" style="text-decoration: none;">
+                    <h3>Project 4: Graphic Design</h3>
+                    <img src="images/highfidelity.png" alt="Design 2" class="project-image">
+                    <p>A high fidelity figma project for a Style Shop.</p>
+                </a>
+            </div>
+
+            <div class="project-item" data-category="development">
+                <a href="work5.html" style="text-decoration: none;">
+                    <h3>Project 5: Pizza Website</h3>
+                    <img src="images/pizzaApp.png" alt="Pizza Website" class="project-image">
+                    <p>A website about a Pizza Shop, created using React.</p>
+                </a>
+            </div>
+
+            <div class="project-item" data-category="development">
+                <a href="work6.html" style="text-decoration: none;">
+                    <h3>Project 6: VR Escape Room Game</h3>
+                    <img src="images/vrescaperoom.png" alt="VR Escape Room" class="project-image">
+                    <p>A VR escape room game made using Unity, filled with different puzzles.</p>
+                </a>
+            </div>
+
+            <div class="project-item" data-category="development">
+                <a href="work7.html" style="text-decoration: none;">
+                    <h3>Project 7: Travelling List Website</h3>
+                    <img src="images/travelList.png" alt="Travelling List" class="project-image">
+                    <p>A website created using React to help users track items for a trip.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Please feel free to reach out at any time using the contact methods below! I'm always excited to connect with
+            like-minded professionals!</p>
+        <ul>
+            <li>Email: <a href="mailto:23016791@myrp.edu.sg">23016791@myrp.edu.sg</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/nurulelyiana"
+                    target="_blank">linkedin.com/in/nurulelyiana</a></li>
+            <li>GitHub: <a href="https://github.com/elyianaaa" target="_blank">github.com/elyianaaa</a></li>
+        </ul>
+        <p>I'm open to freelance opportunities, collaborations, or just chatting about the latest trends in web
+            development.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nurul Elyiana. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function filterProjects(category) {
+            const allProjects = document.querySelectorAll('.project-item');
+
+            allProjects.forEach(project => {
+                const projectCategory = project.getAttribute('data-category');
+
+                if (category === 'all' || projectCategory === category) {
+                    project.style.display = 'block'; 
+                    setTimeout(() => {
+                        project.classList.add('visible'); 
+                        project.classList.remove('hidden'); 
+                    }, 10); 
+                } else {
+                    project.classList.remove('visible'); 
+                    project.classList.add('hidden');
+
+                    
+                    project.addEventListener('transitionend', function () {
+                        if (project.classList.contains('hidden')) {
+                            project.style.display = 'none'; 
+                        }
+                    }, { once: true });
+                }
+            });
+        }
+
+        window.onload = () => {
+            filterProjects('all');
+        };
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+/* Global Styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between text and image */
+}
+
+.image-section {
+    flex: 1; /* Allows image to take available space */
+    display: flex;
+    justify-content: flex-end; /* Aligns the image to the right */
+    height: 600px;
+    width: 600px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding-top: 60px; /* Adjust for fixed navigation */
+}
+
+h1, h2, h3 {
+    color: #1B4965; /* Dark Blue */
+    text-align: center;
+}
+
+p {
+    color: #464141;
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #8d9ea9; /* Dark Blue for Navbar */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #cddede; /* Lighter Blue */
+}
+
+/* Home Section */
+#home {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 254, 254, 0.5)),
+                url("images/bgImage.jpg");
+    background-size: cover;
+    background-position: center; */
+}
+
+#home h1 {
+    font-size: 5rem;
+    text-align: right;
+
+}
+
+#home p {
+    font-size: 2rem;
+    max-width: 1000px;
+    color: black,
+}
+
+/* About Me Section */
+#about {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 0 20px;
+    background-color: #d8dcdf; 
+    
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #1B4965;
+    font-size: 1.5rem;
+}
+
+#about h2 {
+    font-size: 3.5rem;
+}
+
+/* Skills Section */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills ul li {
+    background-color: #1B4965; 
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    flex-basis: 30%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+#skills ul li:hover {
+    background-color: #1B4965; 
+}
+
+/* Projects Section */
+#projects {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#projects .filter-buttons button {
+    background-color: #1B4965; 
+    color: white;
+    padding: 15px 30px; 
+    font-size: 25px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px;
+    transition: background-color 0.3s;
+}
+
+#projects .filter-buttons button:hover {
+    background-color: #94a8a8; 
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #f6f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px rgba(90, 84, 84, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.project-item.visible {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+.project-item.hidden {
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-item h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #d8dcdf; 
+    color: rgb(67, 63, 63);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#contact ul {
+    padding: 0;
+    list-style: none;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #000000; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #cddede; 
+}
+
+/* Footer */
+footer {
+    background-color: #d8dcdf;
+    color: #CAE9FF; 
+    padding: 20px 0;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
