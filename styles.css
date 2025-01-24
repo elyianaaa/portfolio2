@@ -117,11 +117,9 @@ nav ul li a:hover {
 
 /* About Me Section */
 #about {
-    height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    padding: 0 20px;
     background-color: #d8dcdf; 
     
 }
